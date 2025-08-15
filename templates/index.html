@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Анонимная доска</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Анонимная доска</h1>
+        <form id="messageForm">
+            <textarea id="messageInput" placeholder="Введите ваше сообщение..." required></textarea>
+            <button type="submit">Отправить</button>
+        </form>
+        <div id="messages"></div>
+    </div>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
+<!-- основное приложениеб это лучше не удалять, ровно как и базу данных желательно тоже -->
